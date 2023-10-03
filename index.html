@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tire Retreading App</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header><h1>Production App</h1></header>
+
+    <form id="retreadingForm">
+      <!-- <h2>Production App</h2> -->
+      <div id="customerInputs">
+        <div class="customer-input">
+          <label for="customerName1" class="required" id="customerLabel"
+            >Customer Name:</label
+          >
+          <select class="customer-name" required>
+            <option value="Black Rubber Sydney">Black Rubber Sydney</option>
+            <option value="Buslines NR">Buslines NR</option>
+            <option value="Buslines Tam">Buslines Tam</option>
+            <option value="Doncal">Doncal</option>
+            <option value="Followmont">Followmont</option>
+            <option value="JPT">JPT</option>
+            <option value="Karremens">Karremens</option>
+            <option value="PVT Careys">PVT Careys</option>
+            <option value="PVT Stockmasters">PVT Stockmasters</option>
+            <option value="PVT Tamworth">PVT Tamworth</option>
+            <option value="Stock Retreads">Stock Retreads</option>
+            <option value="Tuff FNQ">Tuff FNQ</option>
+            <option value="Tyres & More Kyogul">Tyres & More Kyogul</option>
+            <option value="Tyreright Rocklea">Tyreright Rocklea</option>
+            <option value="Tyreright Yat">Tyreright Yat</option>
+            <!-- Add other customer options here -->
+          </select>
+
+          <label for="tireSize1" id="sizeLabel">Tyre Size:</label>
+          <select class="tire-size" required>
+            <option value="385">385</option>
+            <option value="315">315</option>
+            <option value="305">305</option>
+            <option value="295">295</option>
+            <option value="11R">11R</option>
+            <option value="275">275</option>
+            <option value="265">265</option>
+            <option value="255">255</option>
+            <option value="245">245</option>
+            <option value="215">215</option>
+            <option value="205">205</option>
+            <option value="195">195</option>
+            <!-- Add other tire size options here -->
+          </select>
+
+          <label for="quantity1" class="required" id="quantityLabel"
+            >Quantity:</label
+          >
+          <input type="number" class="quantity" required />
+
+          <label for="completionDate1" class="required" id="completionLabel"
+            >Completion Date:</label
+          >
+          <input type="date" class="completion-date" required />
+
+          <button type="button" class="remove-customer">Remove</button>
+        </div>
+      </div>
+      <div class="buttonWrapper">
+        <div class="buttonContainer">
+          <button type="button" id="addCustomer">Add Customer</button>
+          <button type="button" id="calculate">Calculate</button>
+        </div>
+      </div>
+    </form>
+    <h2>Load List Schedules</h2>
+    <!-- <div id="load-lists">
+    </div> -->
+    <div id="resultsContainer"></div>
+
+    <script src="/script1.js"></script>
+</body>
+</html>
