@@ -18,11 +18,11 @@ document.addEventListener("DOMContentLoaded", function () {
   // ]);
   const tireLimits = new Map([
     ["385", 2],
-    ["295", 10],
-    ["11R", 15],
+    ["295", 11],
+    ["11R", 16],
     ["315", 7],
     ["305", 7],
-    ["275", 10],
+    ["275", 12],
     ["265", 4],
     ["255", 4],
     ["245", 4],
