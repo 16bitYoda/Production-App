@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <option value="Tyreright Yat">Tyreright Yat</option>
             <option value="Tyreright Lytton">Tyreright Lytton</option>
             <option value="Tyres & More"> 
-            <option value="Bobs Tyre Centres">Bobs Tyre Solutions</option>
+            <option value="Bobs Tyre Centres">Bobs Tyre Centres</option>
             <option value="Tims Tyre & Auto">Tims Tyre & Auto</option> 
             <option value="K&S Easter">K&S Easter</option> 
             <option value="Ryanies For Tyres">Ryanies For Tyres</option> 
