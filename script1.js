@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ["265", 4],
     ["255", 4],
     ["245", 4],
-    ["235", 4],
+    ["235", 6],
     ["215", 4],
     ["205", 4],
     ["195", 4],
@@ -46,7 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
     customerInput.innerHTML = `
         <label for="customerName" class="required" id="customerLabel">Customer Name:</label>
         <select class="customer-name" required>
-        <option value="Black Rubber Sydney">Black Rubber Sydney</option>
             <option value="All Coast Tyre Solutions">All Coast Tyre Solutions</option>
             <option value="BD Trwnsport">BD Transport</option> 
             <option value="Black Rubber Sydney">Black Rubber Sydney</option>
@@ -77,6 +76,8 @@ document.addEventListener("DOMContentLoaded", function () {
             <option value="Tyreright Rocklea">Tyreright Rocklea</option>
             <option value="Tyreright Townsville">Tyreright Townsville</option>   
             <option value="Tyreright Yat">Tyreright Yat</option>
+            <option value="Wickham Freight Lines">Wickham Freight Lines</option>
+
         <!-- Add other customer options here -->
         </select>
 
