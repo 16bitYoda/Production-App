@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ["295", 8],
     ["11R", 14],
     // ["315", 8],
-    ["305 / 315", 8],
+    ["305", 8],
     ["275", 11],
     ["265", 4],
     ["255", 4],
@@ -46,46 +46,33 @@ document.addEventListener("DOMContentLoaded", function () {
     customerInput.innerHTML = `
         <label for="customerName" class="required" id="customerLabel">Customer Name:</label>
         <select class="customer-name" required>
-            <option value="All Coast Tyre Solutions">All Coast Tyre Solutions</option>
-            <option value="BD Trwnsport">BD Transport</option> 
-            <option value="Black Rubber Sydney">Black Rubber Sydney</option>
-            <option value="Bobs Tyre Centres">Bobs Tyre Centres</option>
-            <option value="Buslines NR">Buslines NR</option>
-            <option value="Buslines Tam">Buslines Tam</option>
-            <option value="Carrol Tyres">Carrol Tyres</option> 
-            <option value="Doncal">Doncal</option>
-            <option value="Followmont">Followmont</option>
-            <option value="JPT">JPT</option>
-            <option value="Karremens">Karremens</option>
-            <option value="K&S Easter">K&S Easter</option> 
-            <option value="Mitch's Mobile Tyre Service">Mitch's Mobile Tyre Service</option>
-            <option value="PVT Bis">PVT Bis</option>
-            <option value="PVT Careys">PVT Careys</option>
-            <option value="PVT Stockmasters">PVT Stockmasters</option>
-            <option value="PVT Tamworth">PVT Tamworth</option>
-            <option value="Ryanies For Tyres">Ryanies For Tyres</option> 
-            <option value="Stock Retreads">Stock Retreads</option>
-            <option value="Tims Tyre & Auto">Tims Tyre & Auto</option> 
-            <option value="Treadwell">Treadwell</option> 
-            <option value="Tully Tyres">Tully Tyres</option>
-            <option value="Tuff FNQ">Tuff FNQ</option>
-            <option value="Tyres & More">Tyres & More</option> 
-            <option value="Tyres & More Kyogul">Tyres & More Kyogul</option>
-            <option value="Tyres On The Run">Tyres On The Run</option> 
-            <option value="Tyreright Lytton">Tyreright Lytton</option>
-            <option value="Tyreright Rocklea">Tyreright Rocklea</option>
-            <option value="Tyreright Townsville">Tyreright Townsville</option>   
-            <option value="Tyreright Yat">Tyreright Yat</option>
-            <option value="Wickham Freight Lines">Wickham Freight Lines</option>
-
+        <option value="Black Rubber Sydney">Black Rubber Sydney</option>
+        <option value="Buslines NR">Buslines NR</option>
+        <option value="Buslines Tam">Buslines Tam</option>
+        <option value="Doncal">Doncal</option>
+        <option value="Followmont">Followmont</option>
+        <option value="JPT">JPT</option>
+        <option value="Karremens">Karremens</option>
+        <option value="Mitch's Mobile Tyre Service">Mitch's Mobile Tyre Service</option>
+        <option value="PVT Careys">PVT Careys</option>
+        <option value="PVT Stockmasters">PVT Stockmasters</option>
+        <option value="PVT Tamworth">PVT Tamworth</option>
+        <option value="Stock Retreads">Stock Retreads</option>
+        <option value="Treadwell">Treadwell</option>
+        <option value="Tuff FNQ">Tuff FNQ</option>
+        <option value="Tyres & More Kyogul">Tyres & More Kyogul</option>
+        <option value="Tyreright Rocklea">Tyreright Rocklea</option>
+        <option value="Tyreright Yat">Tyreright Yat</option>
+        <option value="Tyreright Lytton">Tyreright Lytton</option>
+        <option value="Tyres & More">Tyres & More</option>
+        <option value="Wises">Wises</option>
         <!-- Add other customer options here -->
         </select>
 
         <label for="tireSize" id="sizeLabel">Tyre Size:</label>
         <select class="tire-size" required>
         <option value="385">385</option>
-        // <option value="315">315</option>
-        <option value="305 / 315">305 / 315</option>
+        <option value="305">305 or 315</option>
         <option value="295">295</option>
         <option value="11R">11R</option>
         <option value="275">275</option>
@@ -219,6 +206,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
     remainingHTML.appendChild(remainingContents);
     resultsContainer.appendChild(remainingHTML);
+  }
+
+  // ----------------------------------------------------------------------CSV FILE DOWNLOAD
+  // Handle "Export to Excel" button click
+  const exportButton = document.getElementById("exportExcel");
+  exportButton.addEventListener("click", exportToExcel);
+
+  function exportToExcel() {
+    const wb = XLSX.utils.book_new();
+
+    // Create a worksheet for loads
+    const loadsData = loads.flatMap((load, loadIndex) =>
+      load.map((tire) => [loadIndex + 1, tire.customer, tire.size])
+    );
+    const loadsWS = XLSX.utils.aoa_to_sheet([["Load Number", "Customer", "Tire Size"], ...loadsData]);
+
+    // Create a worksheet for remaining tires
+    const remainingData = Array.from(remainingTires, ([tireSize, quantity]) => [
+      "Remaining Tires",
+      "",
+      `${tireSize}: ${quantity}`,
+    ]);
+    const remainingWS = XLSX.utils.aoa_to_sheet([["Load Number", "Customer", "Tire Size"], ...remainingData]);
+
+    // Add worksheets to the workbook
+    XLSX.utils.book_append_sheet(wb, loadsWS, "Loads");
+    XLSX.utils.book_append_sheet(wb, remainingWS, "Remaining Tires");
+
+    // Save the workbook to a file
+    XLSX.writeFile(wb, "tire_loads.xlsx");
   }
 });
 
