@@ -20,9 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
     ["385", 2],
     ["295", 8],
     ["11R", 14],
-    // ["315", 7],
-    ["305_315", 8],
-    // ["305", 8],
+    // ["315", 8],
+    ["305", 8],
     ["275", 11],
     ["265", 4],
     ["255", 4],
@@ -85,8 +84,8 @@ document.addEventListener("DOMContentLoaded", function () {
         <label for="tireSize" id="sizeLabel">Tyre Size:</label>
         <select class="tire-size" required>
         <option value="385">385</option>
-        <option value="315">315</option>
-        <option value="305">305</option>
+        // <option value="315">315</option>
+        <option value="305">305 / 315</option>
         <option value="295">295</option>
         <option value="11R">11R</option>
         <option value="275">275</option>
