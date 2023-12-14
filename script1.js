@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <option value="Tyreright Lytton">Tyreright Lytton</option>
         <option value="Tyres & More">Tyres & More</option>
         <option value="Wises">Wises</option>
-        <option value="Wickham Freight Lines"Wickham Freight Lines</option>
+        <option value="Wickham Freight Lines">Wickham Freight Lines</option>
         <!-- Add other customer options here -->
         </select>
 
