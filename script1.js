@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <option value="PVT Stockmasters">PVT Stockmasters</option>
         <option value="PVT Tamworth">PVT Tamworth</option>
         <option value="Ryanies">Ryanies</option>
-        <option value="Samereen / Caseys">Samreen / Caseys</option>
+        <option value="Samreen / Caseys">Samreen / Caseys</option>
         <option value="Stock Retreads">Stock Retreads</option>
         <option value="Treadwell">Treadwell</option>
         <option value="Tuff FNQ">Tuff FNQ</option>
@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <option value="Tyreright Lytton">Tyreright Lytton</option>
         <option value="Tyres & More">Tyres & More</option>
         <option value="Wises">Wises</option>
+        <option value="Wickham Freight Lines"Wickham Freight Lines</option>
         <!-- Add other customer options here -->
         </select>
 
