@@ -46,31 +46,36 @@ document.addEventListener("DOMContentLoaded", function () {
     customerInput.innerHTML = `
         <label for="customerName" class="required" id="customerLabel">Customer Name:</label>
         <select class="customer-name" required>
-        <option value="Black Rubber Sydney">Black Rubber Sydney</option>
-        <option value="Buslines NR">Buslines NR</option>
-        <option value="Buslines Tam">Buslines Tam</option>
-        <option value="Doncal">Doncal</option>
-        <option value="Followmont">Followmont</option>
-        <option value="JPT">JPT</option>
-        <option value="Karremens">Karremens</option>
-        <option value="Mitch's Mobile Tyre Service">Mitch's Mobile Tyre Service</option>
-        <option value="PVT Careys">PVT Careys</option>
-        <option value="PVT Stockmasters">PVT Stockmasters</option>
-        <option value="PVT Tamworth">PVT Tamworth</option>
-        <option value="Ryanies">Ryanies</option>
-        <option value="Samreen / Caseys">Samreen / Caseys</option>
-        <option value="Stock Retreads">Stock Retreads</option>
-        <option value="Treadwell">Treadwell</option>
-        <option value="Tuff FNQ">Tuff FNQ</option>
-        <option value="Tyres & More Kyogul">Tyres & More Kyogul</option>
-        <option value="Tyreright Rocklea">Tyreright Rocklea</option>
-        <option value="Tyreright Yat">Tyreright Yat</option>
-        <option value="Tyreright Lytton">Tyreright Lytton</option>
-        <option value="Tyres & More">Tyres & More</option>
-        <option value="Wises">Wises</option>
-        <option value="Wickham Freight Lines">Wickham Freight Lines</option>
-        <!-- Add other customer options here -->
-        </select>
+            <option value="All Coast Tyre Service">All Coast Tyre Service</option>
+            <option value="Black Rubber Sydney">Black Rubber Sydney</option>
+            <option value="Bobs Tyre Service">Bobs Tyre Service</option>
+            <option value="Buslines Northern Rivers">Buslines Northern Rivers</option>
+            <option value="Buslines Tamworth">Buslines Tamworth</option>
+            <option value="Doncal">Doncal</option>
+            <option value="Followmont">Followmont</option>
+            <option value="JPT">JPT</option>
+            <option value="Karremens">Karremens</option>
+            <option value="Mitch's Mobile Tyre Service">Mitch's Mobile Tyre Service</option>
+            <option value="PVT Careys">PVT Careys</option>
+            <option value="PVT Stockmasters">PVT Stockmasters</option>
+            <option value="PVT Tamworth">PVT Tamworth</option>
+            <option value="Ryanies">Ryanies</option>
+            <option value="Samreen / Caseys">Samreen / Caseys</option>
+            <option value="Stock Retreads">Stock Retreads</option>
+            <option value="Treadwell">Treadwell</option>
+            <option value="Tuff Tyres FNQ">Tuff Tyres FNQ</option>
+            <option value="Tully Tyre Service">Tully Tyre Service</option>
+            <option value="Tyres & More">Tyres & More</option>
+            <option value="Tyre Evolution">Tyre Evolution</option>
+            <option value="Tyreright Rocklea">Tyreright Rocklea</option>
+            <option value="Tyreright Yatala">Tyreright Yatala</option>
+            <option value="Tyreright Lytton">Tyreright Lytton</option>
+            <option value="Tyres & More">Tyres & More</option>
+            <option value="Wises">Wises</option>
+            <option value="Martins">Martins</option>
+            <option value="Wickham Freight Lines">Wickham Freight Lines</option>
+            <!-- Add other customer options here -->
+          </select>
 
         <label for="tireSize" id="sizeLabel">Tyre Size:</label>
         <select class="tire-size" required>
