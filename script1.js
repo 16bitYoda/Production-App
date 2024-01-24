@@ -55,6 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <option value="Followmont">Followmont</option>
             <option value="JPT">JPT</option>
             <option value="Karremens">Karremens</option>
+            <option value="Martins">Martins</option>
             <option value="Mitch's Mobile Tyre Service">Mitch's Mobile Tyre Service</option>
             <option value="PVT Careys">PVT Careys</option>
             <option value="PVT Stockmasters">PVT Stockmasters</option>
@@ -68,12 +69,12 @@ document.addEventListener("DOMContentLoaded", function () {
             <option value="Tyres & More">Tyres & More</option>
             <option value="Tyre Evolution">Tyre Evolution</option>
             <option value="Tyreright Rocklea">Tyreright Rocklea</option>
-            <option value="Tyreright Yatala">Tyreright Yatala</option>
             <option value="Tyreright Lytton">Tyreright Lytton</option>
+            <option value="Tyreright Yatala">Tyreright Yatala</option>
+            <option value="Tyreright Townsville">Tyreright Townsville</option>
             <option value="Tyres & More">Tyres & More</option>
-            <option value="Wises">Wises</option>
-            <option value="Martins">Martins</option>
             <option value="Wickham Freight Lines">Wickham Freight Lines</option>
+            <option value="Wises">Wises</option>
             <!-- Add other customer options here -->
           </select>
 
