@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const tireLimits = new Map([
     ["385", 2],
     ["295", 8],
-    ["11R", 14],
+    ["11R", 16],
     // ["315", 8],
-    ["305 or 315", 8],
+    ["305 or 315", 10],
     ["275", 11],
     ["265", 4],
     ["255", 4],
@@ -88,6 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <option value="265">265</option>
         <option value="255">255</option>
         <option value="245">245</option>
+        <option value="235">235</option>
         <option value="215">215</option>
         <option value="205">205</option>
         <option value="195">195</option>
